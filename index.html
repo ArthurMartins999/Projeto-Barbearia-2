@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Gold | Goiânia</title>
+  <meta name="description" content="Barbearia premium em Goiânia. Corte, barba e acabamento com padrão de excelência. Agende pelo WhatsApp." />
+ 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#inicio" aria-label="Ir para o início">
+          <div class="logo" aria-hidden="true">✂️</div>
+          <div>
+            <strong>BARBEARIA GOLD</strong>
+            <span>Goiânia • Preto, Branco & Dourado</span>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Navegação principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#agendar">Agendar</a>
+          <a href="#localizacao">Localização</a>
+        </nav>
+
+        <div class="navactions">
+          <a class="btn secondary" href="#agendar">Agendar</a>
+          <a class="btn" id="whatsTop" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="burger" id="burger" aria-label="Abrir menu">☰</button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobilemenu" id="mobilemenu" style="display:none;">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#localizacao">Localização</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio" class="hero">
+    <div class="container">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="kicker">
+            <span class="pill">⭐ Atendimento premium</span>
+            <span class="pill">🕒 Segunda a Sábado</span>
+            <span class="pill">📍 Goiânia - GO</span>
+          </div>
+
+          <h1 class="title">Visual <em>afiado</em>, presença forte e acabamento de respeito.</h1>
+          <p class="subtitle">
+            Aqui o corte é pensado no seu estilo e no seu dia a dia. Barba alinhada, finalização limpa e experiência de barbearia moderna — sem perder a tradição.
+          </p>
+
+          <div class="heroactions">
+            <a class="btn" id="whatsHero" href="#" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            <a class="btn secondary" href="#servicos">Ver serviços</a>
+          </div>
+
+          <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="pill">✔️ Ambiente climatizado</span>
+            <span class="pill">✔️ Produtos profissionais</span>
+            <span class="pill">✔️ Pontualidade</span>
+          </div>
+        </div>
+
+        <div class="heroCard reveal tilt" aria-label="Card de destaque">
+          <div class="heroPhoto" aria-hidden="true"></div>
+          <div class="heroOverlay" aria-hidden="true"></div>
+
+          <div class="heroBadge">
+            <span style="color:var(--gold)">●</span>
+            <span>Agenda aberta hoje</span>
+          </div>
+
+          <div class="heroStats">
+            <div class="stat">
+              <strong>+1.200</strong>
+              <span>clientes atendidos</span>
+            </div>
+            <div class="stat">
+              <strong>4.9★</strong>
+              <span>avaliações médias</span>
+            </div>
+            <div class="stat">
+              <strong>30min</strong>
+              <span>tempo médio por corte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <h2>Serviços</h2>
+          <p class="lead">Escolha o pacote ideal. Se quiser, personalizamos na hora com base no seu estilo.</p>
+        </div>
+        <a class="btn secondary" href="#agendar">Quero agendar</a>
+      </div>
+
+      <div class="grid services">
+        <article class="card service reveal tilt">
+          <div class="pad">
+            <div class="icon" aria-hidden="true">✂️</div>
+            <h3>Corte Premium</h3>
+            <p>Degradê, social, freestyle e finalização com alinhamento detalhado.</p>
+            <div class="price">
+              <span>Duração: ~30min</span>
+              <b>R$ 45</b>
+            </div>
+          </div>
+        </article>
+
+        <article class="card service reveal tilt">
+          <div class="pad">
+            <div class="icon" aria-hidden="true">🧔</div>
+            <h3>Barba Completa</h3>
+            <p>Navalha, toalha quente e acabamento para deixar o desenho perfeito.</p>
+            <div class="price">
+              <span>Duração: ~25min</span>
+              <b>R$ 40</b>
+            </div>
+          </div>
+        </article>
+
+        <article class="card service reveal tilt">
+          <div class="pad">
+            <div class="icon" aria-hidden="true">👑</div>
+            <h3>Combo Gold</h3>
+            <p>Corte + barba + sobrancelha. Experiência completa e sem pressa.</p>
+            <div class="price">
+              <span>Duração: ~60min</span>
+              <b>R$ 80</b>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section" style="background: rgba(255,255,255,.02); border-top:1px solid rgba(255,255,255,.06); border-bottom:1px solid rgba(255,255,255,.06);">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <h2>Sobre a barbearia</h2>
+          <p class="lead">Tradição + estética moderna. A gente entrega corte bonito e experiência que dá vontade de voltar.</p>
+        </div>
+      </div>
+
+      <div class="grid aboutGrid">
+        <div class="card reveal">
+          <div class="pad">
+            <h3 style="margin:0 0 10px;">O padrão é simples: capricho.</h3>
+            <p style="margin:0; color:var(--muted); line-height:1.65;">
+              Atendimento com hora marcada, ambiente organizado e finalização impecável.
+              Aqui você sai pronto pra foto — e pra vida real.
+            </p>
+
+            <div class="aboutList">
+              <div class="aboutItem">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Consultoria rápida</strong>
+                  <span>A gente sugere o corte ideal pro seu formato de rosto e estilo.</span>
+                </div>
+              </div>
+              <div class="aboutItem">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Higiene & segurança</strong>
+                  <span>Ferramentas higienizadas e cuidado total em cada atendimento.</span>
+                </div>
+              </div>
+              <div class="aboutItem">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Finalização premium</strong>
+                  <span>Detalhes fazem diferença: alinhamento, textura e acabamento limpo.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal tilt">
+          <div class="pad">
+            <h3 style="margin:0 0 10px;">Horários</h3>
+            <p style="margin:0 0 14px; color:var(--muted); line-height:1.65;">
+              Trabalhamos com agenda para evitar espera. Chegou, sentou, cortou.
+            </p>
+
+            <div class="grid" style="gap:10px;">
+              <div class="aboutItem">
+                <span class="dot" aria-hidden="true"></span>
+                <div><strong>Segunda a Sexta</strong><span>09:00 — 19:00</span></div>
+              </div>
+              <div class="aboutItem">
+                <span class="dot" aria-hidden="true"></span>
+                <div><strong>Sábado</strong><span>09:00 — 17:00</span></div>
+              </div>
+              <div class="aboutItem">
+                <span class="dot" aria-hidden="true"></span>
+                <div><strong>Domingo</strong><span>Fechado</span></div>
+              </div>
+            </div>
+
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <span class="pill">💳 Pix / Cartão</span>
+              <span class="pill">📶 Wi-Fi</span>
+              <span class="pill">❄️ Ar condicionado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <h2>Galeria</h2>
+         
+        </div>
+       
+      </div>
+      <div class="grid galleryGrid">
+        <div class="galleryItem reveal tilt" aria-label="Foto de corte de cabelo 1">
+          <img src="images/cortedegrade.webp" />
+        </div>
+        <div class="galleryItem reveal tilt" aria-label="Foto de corte de cabelo 2">
+          <img src="images/barba.jpg"  />
+        </div>
+        <div class="galleryItem reveal tilt" aria-label="Foto de corte de cabelo 3">
+          <img src="images/moicano.jpg"  />
+        </div>
+        <div class="galleryItem reveal tilt" aria-label="Foto de corte de cabelo 4">
+          <img src="images/fresstyle.jpg"  />
+        </div>
+     
+        </div>
+      
+
+        
+      
+
+      
+    </div>
+  </section>
+
+  <!-- Agendar + Mapa -->
+  <section id="agendar" class="section" style="background: rgba(255,255,255,.02); border-top:1px solid rgba(255,255,255,.06);">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <h2>Agende agora</h2>
+          <p class="lead">Preencha rapidinho e envie no WhatsApp. Você confirma o horário em segundos.</p>
+        </div>
+      </div>
+
+      <div class="grid bookingGrid">
+        <div class="card reveal">
+          <div class="pad">
+            <h3 style="margin:0 0 8px;">Formulário rápido</h3>
+            <p style="margin:0; color:var(--muted); line-height:1.6;">
+              Isso não envia sozinho pra nenhum servidor. Ao clicar, ele monta a mensagem e abre seu WhatsApp.
+            </p>
+
+            <form class="form" id="formAgendar">
+              <div class="field">
+                <label for="nome">Seu nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Ex: Arthur" required />
+              </div>
+
+              <div class="field">
+                <label for="servico">Serviço</label>
+                <select id="servico" name="servico" required>
+                  <option value="" disabled selected>Selecione…</option>
+                  <option>Corte Premium</option>
+                  <option>Barba Completa</option>
+                  <option>Combo Gold</option>
+                </select>
+              </div>
+
+              <div class="grid" style="grid-template-columns:1fr 1fr; gap:12px;">
+                <div class="field">
+                  <label for="data">Data</label>
+                  <input id="data" name="data" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="hora">Horário</label>
+                  <input id="hora" name="hora" type="time" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="obs">Observações (opcional)</label>
+                <textarea id="obs" name="obs" placeholder="Ex: quero degradê médio, risca do lado..."></textarea>
+              </div>
+
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:4px;">
+                <button class="btn" type="submit">Enviar no WhatsApp</button>
+                <a class="btn secondary" href="#localizacao">Ver localização</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div id="localizacao" class="mapBox reveal tilt" aria-label="Mapa da barbearia">
+          <!-- TROQUE O src pelo seu Embed do Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30599.999999999996!2d-49.300000000000004!3d-16.680000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa da Barbearia">
+          </iframe>
+          <div class="mapOverlay" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+        <span class="pill">📌 Rua Exemplo, 123 — Goiânia/GO</span>
+        <span class="pill">📞 (62) 99160-6500</span>
+        <a class="pill" id="openMaps" href="#" target="_blank" rel="noopener">Abrir no Google Maps ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>
+          <span>© <span id="year"></span> Barbearia Gold •</span>
+          <span class="divider"> </span>
+          <span>Desenvolvido por Arthur Martins</span>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="#inicio">Voltar ao topo</a>
+          <span class="divider">|</span>
+          <a id="whatsFooter" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
